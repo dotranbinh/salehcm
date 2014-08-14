@@ -20,7 +20,7 @@ class sale_order(osv.osv):
         self.os_unlink(cr, uid, ids,folder_path, context)
         
         return {
-                'name'     : 'Go to website', 
+                'name'     : 'Download quotation from Server', 
                 'type': 'ir.actions.act_url',
                 'res_model':'ir.actions.act_url', 
                 'url': 'http://localhost:8080/test/'+filename,

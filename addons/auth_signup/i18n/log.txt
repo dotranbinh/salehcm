@@ -1,0 +1,5 @@
+10:56:13: D:\Development\OpenERP\workspace\XNKPhiaNam\openerp\addons\auth_signup\i18n\vi.po:138: keyword "$" unknown
+10:56:13: D:\Development\OpenERP\workspace\XNKPhiaNam\openerp\addons\auth_signup\i18n\vi.po:131: missing `msgstr' section
+10:56:13: D:\Development\OpenERP\workspace\XNKPhiaNam\openerp\addons\auth_signup\i18n\vi.po:138:44: syntax error
+10:56:13: D:\Development\OpenERP\workspace\XNKPhiaNam\openerp\addons\auth_signup\i18n\vi.po:138: keyword "object" unknown
+10:56:13: C:\Program Files (x86)\Poedit\bin\msgfmt.exe: found 4 fatal errors

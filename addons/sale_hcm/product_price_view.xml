@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	<record id="view_product_price_list_hcm_inherit" model="ir.ui.view">
+            <field name="name">view.product.price.list.hcm.inherit</field>
+            <field name="model">product.price_list</field>
+            <field name="inherit_id" ref="product.view_product_price_list"/>
+            <field name="arch" type="xml">
+                
+				<xpath expr="//group[@string='Calculate Product Price per Unit Based on Pricelist Version.']" position="replace">
+						<group string="">
+						<field name="price_list" widget="selection"/>
+                        </group>
+						
+					
+                </xpath>
+				
+            </field>
+        </record>
+	</data>
+</openerp>

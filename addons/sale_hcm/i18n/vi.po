@@ -1,0 +1,1029 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* sale_hcm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20130627-231102\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 03:00+0000\n"
+"PO-Revision-Date: 2014-06-23 10:04+0700\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.7\n"
+
+#. module: sale_hcm
+#: help:product.packaging,height_inch:0
+msgid "The height(inch) of the package"
+msgstr "The height(inch) of the package"
+
+#. module: sale_hcm
+#: field:product.pack.cont,number_pack:0
+msgid "Number Pack"
+msgstr "Số lượng/cont"
+
+#. module: sale_hcm
+#: view:product.product.colour:0
+msgid "Product Colour Form"
+msgstr "Product Colour Form"
+
+#. module: sale_hcm
+#: field:product.supplier,zip:0
+msgid "Zip"
+msgstr "Zip"
+
+#. module: sale_hcm
+#: field:product.supplier,title:0 field:product.supplier.title,name:0
+msgid "Title"
+msgstr "Danh xưng"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_product_list_price_his
+msgid "product.list.price.his"
+msgstr "product.list.price.his"
+
+#. module: sale_hcm
+#: field:product.packaging,width_inch:0
+msgid "Width"
+msgstr "Chiều rộng"
+
+#. module: sale_hcm
+#: field:product.supplier,vat:0
+msgid "TIN"
+msgstr "TIN"
+
+#. module: sale_hcm
+#: field:product.product,prod_incr:0
+msgid "Product Increment"
+msgstr "Product Increment"
+
+#. module: sale_hcm
+#: selection:product.pack.cont,cont_type:0
+msgid "40"
+msgstr "40"
+
+#. module: sale_hcm
+#: model:res.groups,name:sale_hcm.group_invoice_manager
+msgid "Invoice Manager"
+msgstr "Quản lý hóa đơn"
+
+#. module: sale_hcm
+#: field:product.supplier,supplier:0
+msgid "Supplier"
+msgstr "Nhà cung cấp"
+
+#. module: sale_hcm
+#: help:product.supplier,tz:0
+msgid ""
+"The partner's timezone, used to output proper date and time values inside "
+"printed reports. It is important to set a value for this field. You should "
+"use the same timezone that is otherwise used to pick and render date and "
+"time values: your computer's timezone."
+msgstr ""
+"The partner's timezone, used to output proper date and time values inside "
+"printed reports. It is important to set a value for this field. You should "
+"use the same timezone that is otherwise used to pick and render date and "
+"time values: your computer's timezone."
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_product_pack_cont
+msgid "product.pack.cont"
+msgstr "product.pack.cont"
+
+#. module: sale_hcm
+#: field:product.supplier,fax:0
+msgid "Fax"
+msgstr "Fax"
+
+#. module: sale_hcm
+#: field:product.supplier,use_parent_address:0
+msgid "Use Company Address"
+msgstr "Sử dụng địa chỉ công ty"
+
+#. module: sale_hcm
+#: selection:product.pack.cont,cont_type:0
+msgid "20"
+msgstr "20"
+
+#. module: sale_hcm
+#: view:product.supplier:0 field:product.supplier,company_id:0
+msgid "Company"
+msgstr "Công ty"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_product_cost_his
+msgid "product.cost.his"
+msgstr "product.cost.his"
+
+#. module: sale_hcm
+#: field:product.product,pack_carton_size:0
+msgid "Packing Carton Size"
+msgstr "Packing Carton Size"
+
+#. module: sale_hcm
+#: view:product.product:0
+msgid "Product Childs"
+msgstr "Các thành phần sản phẩm"
+
+#. module: sale_hcm
+#: field:product.supplier,user_id:0
+msgid "Salesperson"
+msgstr "Nhân viên kinh doanh"
+
+#. module: sale_hcm
+#: view:sale.order:0
+msgid "Payment..."
+msgstr "Thanh toán..."
+
+#. module: sale_hcm
+#: view:product.list.price.his:0
+#: field:product.product,product_list_price_his:0
+msgid "Price History"
+msgstr "Lịch sử giá bán"
+
+#. module: sale_hcm
+#: field:product.product,product_gw:0
+msgid "Product Gross Weight"
+msgstr "Tổng trọng lượng"
+
+#. module: sale_hcm
+#: view:product.packaging:0
+msgid "Pallet Dimension(inch)"
+msgstr "Kích Thước Thùng(inch)"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "ZIP"
+msgstr "ZIP"
+
+#. module: sale_hcm
+#: field:product.supplier,mobile:0
+msgid "Mobile"
+msgstr "Mobile"
+
+#. module: sale_hcm
+#: field:product.supplier,comment:0
+msgid "Notes"
+msgstr "Các ghi chú"
+
+#. module: sale_hcm
+#: model:ir.ui.menu,name:sale_hcm.menu_product_by_category_hcm
+msgid "Product by Category"
+msgstr "Nhóm sản phẩm"
+
+#. module: sale_hcm
+#: field:product.category,code:0
+msgid "Category Code"
+msgstr "Mã nhóm"
+
+#. module: sale_hcm
+#: selection:product.supplier,type:0
+msgid "Shipping"
+msgstr "Vận chuyển"
+
+#. module: sale_hcm
+#: field:product.packaging,length_inch:0
+msgid "Length"
+msgstr "Chiều dài"
+
+#. module: sale_hcm
+#: model:ir.ui.menu,name:sale_hcm.menu_configuration_products_hcm
+#: model:ir.ui.menu,name:sale_hcm.menu_product_hcm
+#: model:ir.ui.menu,name:sale_hcm.menu_products_hcm
+#: model:ir.ui.menu,name:sale_hcm.top_menu_product_manager_hcm
+msgid "Products"
+msgstr "Sản phẩm"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "Mobile:"
+msgstr "Mobile:"
+
+#. module: sale_hcm
+#: help:product.supplier,employee:0
+msgid "Check this box if this contact is an Employee."
+msgstr "Tích vào nếu liên lạc là nhân viên"
+
+#. module: sale_hcm
+#: field:product.cost.his,note:0 field:product.list.price.his,note:0
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: sale_hcm
+#: field:product.supplier,color:0
+msgid "Color Index"
+msgstr "Color Index"
+
+#. module: sale_hcm
+#: field:product.supplier,ref:0
+msgid "Reference"
+msgstr "Tham chiếu"
+
+#. module: sale_hcm
+#: constraint:product.supplier.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Lỗi! Bạn không thể tạo ra nhóm này"
+
+#. module: sale_hcm
+#: help:product.supplier,supplier:0
+msgid ""
+"Check this box if this contact is a supplier. If it's not checked, purchase "
+"people will not see it when encoding a purchase order."
+msgstr "Tích vào nếu liên hệ là nhà cung cấp"
+
+#. module: sale_hcm
+#: field:product.supplier.title,shortcut:0
+msgid "Abbreviation"
+msgstr "Tên viết tắt"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_res_partner
+#: selection:product.supplier.title,domain:0
+msgid "Partner"
+msgstr "Đối tác"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_sale_order
+msgid "Sales Order"
+msgstr "Đơn hàng"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Các sản phẩm"
+
+#. module: sale_hcm
+#: view:product.product.material:0
+msgid "Product Material Form"
+msgstr "Product Material Form"
+
+#. module: sale_hcm
+#: view:product.supplier:0 field:product.supplier.category,partner_ids:0
+msgid "Partners"
+msgstr "Đối tác"
+
+#. module: sale_hcm
+#: field:product.supplier.category,parent_left:0
+msgid "Left parent"
+msgstr "Left parent"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "Street..."
+msgstr "Đường..."
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "e.g. +32.81.81.37.00"
+msgstr "e.g. +32.81.81.37.00"
+
+#. module: sale_hcm
+#: field:product.supplier.category,child_ids:0
+msgid "Child Categories"
+msgstr "Nhóm con"
+
+#. module: sale_hcm
+#: help:product.supplier,use_parent_address:0
+msgid ""
+"Select this if you want to set company's address information  for this "
+"contact"
+msgstr ""
+"Select this if you want to set company's address information  for this "
+"contact"
+
+#. module: sale_hcm
+#: view:product.supplier:0 field:product.supplier,state_id:0
+msgid "State"
+msgstr "State"
+
+#. module: sale_hcm
+#: view:product.product:0
+msgid "Inventory"
+msgstr "Kiểm kê"
+
+#. module: sale_hcm
+#: field:product.supplier,employee:0
+msgid "Employee"
+msgstr "Nhân viên"
+
+#. module: sale_hcm
+#: field:product.supplier,email:0
+msgid "Email"
+msgstr "Email"
+
+#. module: sale_hcm
+#: view:product.product.material:0
+msgid "Product Material Tree"
+msgstr "Product Material Tree"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "Phone:"
+msgstr "Phone:"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_product_category
+msgid "Product Category"
+msgstr "Loại sản phẩm"
+
+#. module: sale_hcm
+#: field:product.supplier,is_company:0
+msgid "Is a Company"
+msgstr "Là công ty"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "e.g. www.openerp.com"
+msgstr "e.g. www.openerp.com"
+
+#. module: sale_hcm
+#: help:product.supplier,user_id:0
+msgid ""
+"The internal user that is in charge of communicating with this contact if "
+"any."
+msgstr ""
+"The internal user that is in charge of communicating with this contact if "
+"any."
+
+#. module: sale_hcm
+#: view:product.packaging:0 view:product.product:0
+msgid "Packing"
+msgstr "Đóng gói"
+
+#. module: sale_hcm
+#: model:ir.ui.menu,name:sale_hcm.menu_configuration_hcm
+msgid "Configuration"
+msgstr "Cấu hình"
+
+#. module: sale_hcm
+#: help:product.packaging,length_inch:0
+msgid "The length(inch) of the package"
+msgstr "The length(inch) of the package"
+
+#. module: sale_hcm
+#: field:res.company,logo2:0
+msgid "logo2"
+msgstr "logo2"
+
+#. module: sale_hcm
+#: model:ir.actions.act_window,name:sale_hcm.action_product_product_colour
+msgid "Proudct Colour"
+msgstr "Màu sắc"
+
+#. module: sale_hcm
+#: field:product.supplier.category,parent_id:0
+msgid "Parent Category"
+msgstr "Nhóm cha"
+
+#. module: sale_hcm
+#: field:product.product,product_nw:0
+msgid "Product Net Weight"
+msgstr "Trọng lượng tịnh"
+
+#. module: sale_hcm
+#: field:sale.order,so_shipment:0
+msgid "Sale Order Shipment"
+msgstr "Vận chuyển"
+
+#. module: sale_hcm
+#: help:product.packaging,width_inch:0
+msgid "The width(inch) of the package"
+msgstr "The width(inch) of the package"
+
+#. module: sale_hcm
+#: view:product.supplier:0 selection:product.supplier,type:0
+#: selection:product.supplier.title,domain:0
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: sale_hcm
+#: field:product.supplier,lang:0
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_product_product_colour
+msgid "product.product.colour"
+msgstr "product.product.colour"
+
+#. module: sale_hcm
+#: field:product.supplier,image_small:0
+msgid "Small-sized image"
+msgstr "Small-sized image"
+
+#. module: sale_hcm
+#: field:sale.order,so_customer_unit:0
+msgid "Customer Unit "
+msgstr "Đơn vị đo"
+
+#. module: sale_hcm
+#: field:product.supplier.category,complete_name:0
+msgid "Full Name"
+msgstr "Tên đầy đủ"
+
+#. module: sale_hcm
+#: view:product.product:0
+msgid "Product Size"
+msgstr "Product Size"
+
+#. module: sale_hcm
+#: field:product.supplier,ean13:0
+msgid "EAN13"
+msgstr "EAN13"
+
+#. module: sale_hcm
+#: field:product.supplier.title,domain:0
+msgid "Domain"
+msgstr "Domain"
+
+#. module: sale_hcm
+#: field:product.cost.his,date_modified:0
+#: field:product.list.price.his,date_modified:0
+msgid "Date Modified"
+msgstr "Ngày thay đổi"
+
+#. module: sale_hcm
+#: view:product.product:0
+msgid "Weight"
+msgstr "Trọng lượng"
+
+#. module: sale_hcm
+#: field:product.supplier,parent_id:0
+msgid "Related Company"
+msgstr "Công ty liên quan"
+
+#. module: sale_hcm
+#: field:product.supplier,image:0
+msgid "Image"
+msgstr "Hình ảnh"
+
+#. module: sale_hcm
+#: field:product.product,parent_id:0
+msgid "Parent Product"
+msgstr "Là thành phần của"
+
+#. module: sale_hcm
+#: field:product.product,child_ids:0
+msgid "Children Product"
+msgstr "Các thành phần "
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_product_packaging
+#: view:product.pack.cont:0
+msgid "Packaging"
+msgstr "Đóng gói"
+
+#. module: sale_hcm
+#: field:product.supplier,contact_address:0
+msgid "Complete Address"
+msgstr "Toàn bộ địa chỉ"
+
+#. module: sale_hcm
+#: field:product.supplier,image_medium:0
+msgid "Medium-sized image"
+msgstr "Medium-sized image"
+
+#. module: sale_hcm
+#: field:product.supplier,has_image:0
+msgid "unknown"
+msgstr "unknown"
+
+#. module: sale_hcm
+#: field:res.partner,special_date:0
+msgid "Special Date"
+msgstr "Ngày đặc biệt"
+
+#. module: sale_hcm
+#: field:product.supplier,tz_offset:0
+msgid "Timezone offset"
+msgstr "Timezone offset"
+
+#. module: sale_hcm
+#: field:product.product,product_code_supplier:0
+msgid "Product Code Supplier"
+msgstr "Mã sản phẩm từ nhà cung cấp"
+
+#. module: sale_hcm
+#: model:ir.ui.menu,name:sale_hcm.menu_configuration_products_category_hcm
+msgid "Product Categories"
+msgstr "Loại sản phẩm"
+
+#. module: sale_hcm
+#: field:product.supplier,function:0
+msgid "Job Position"
+msgstr "Vị trí công việc"
+
+#. module: sale_hcm
+#: view:product.supplier:0 field:product.supplier,child_ids:0
+msgid "Contacts"
+msgstr "Các liên hệ"
+
+#. module: sale_hcm
+#: field:product.supplier,commercial_partner_id:0
+msgid "Commercial Entity"
+msgstr "Commercial Entity"
+
+#. module: sale_hcm
+#: field:product.cost.his,product_id:0
+#: field:product.list.price.his,product_id:0
+#: field:product.pack.cont,product_id:0
+msgid "Product ID"
+msgstr "Product ID"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "(edit company address)"
+msgstr "(Sửa địa chỉ công ty)"
+
+#. module: sale_hcm
+#: field:product.supplier.category,name:0
+msgid "Category Name"
+msgstr "Tên nhóm"
+
+#. module: sale_hcm
+#: selection:res.partner,partner_unit:0
+#: selection:sale.order,so_customer_unit:0
+msgid "Inch"
+msgstr "Inch"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "Tags..."
+msgstr "Tags..."
+
+#. module: sale_hcm
+#: field:sale.order,so_payment:0
+msgid "Sale Order Payment"
+msgstr "Thanh toán"
+
+#. module: sale_hcm
+#: field:product.supplier,website:0
+msgid "Website"
+msgstr "Website"
+
+#. module: sale_hcm
+#: model:ir.ui.menu,name:sale_hcm.menu_customers_hcm
+msgid "Customers"
+msgstr "Các khách hàng"
+
+#. module: sale_hcm
+#: field:product.supplier,category_id:0
+msgid "Tags"
+msgstr "Tags"
+
+#. module: sale_hcm
+#: model:ir.actions.act_window,name:sale_hcm.action_product_product_material
+#: model:ir.ui.menu,name:sale_hcm.menu_configuration_products_product_material_hcm
+#: field:product.product,product_material:0
+#: field:product.product.material,name:0
+msgid "Product Material"
+msgstr "Chất liệu"
+
+#. module: sale_hcm
+#: model:ir.ui.menu,name:sale_hcm.menu_configuration_products_product_colour_hcm
+#: field:product.product,product_colour:0 field:product.product.colour,name:0
+msgid "Product Colour"
+msgstr "Màu sắc"
+
+#. module: sale_hcm
+#: field:product.supplier,street2:0
+msgid "Street2"
+msgstr "Đường 2"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_product_supplier
+#: field:product.product,product_supplier_id:0
+msgid "Product Supplier"
+msgstr "Nhà cung cấp"
+
+#. module: sale_hcm
+#: help:product.supplier,image_medium:0
+msgid ""
+"Medium-sized image of this contact. It is automatically resized as a "
+"128x128px image, with aspect ratio preserved. Use this field in form views "
+"or some kanban views."
+msgstr ""
+"Medium-sized image of this contact. It is automatically resized as a "
+"128x128px image, with aspect ratio preserved. Use this field in form views "
+"or some kanban views."
+
+#. module: sale_hcm
+#: field:product.supplier,phone:0
+msgid "Phone"
+msgstr "Phone"
+
+#. module: sale_hcm
+#: model:res.groups,name:sale_hcm.group_product_manager
+msgid "Product Manager"
+msgstr "Quản lý sản phẩm"
+
+#. module: sale_hcm
+#: view:product.product:0
+msgid "Internal Description..."
+msgstr "Các ghi chú nội bộ..."
+
+#. module: sale_hcm
+#: field:product.supplier,active:0 field:product.supplier.category,active:0
+msgid "Active"
+msgstr "Kích hoạt"
+
+#. module: sale_hcm
+#: field:product.packaging,qty_export_carton:0
+msgid "Qty/Export Carton"
+msgstr "Số lượng trong thùng"
+
+#. module: sale_hcm
+#: help:product.supplier,vat:0
+msgid ""
+"Tax Identification Number. Check the box if this contact is subjected to "
+"taxes. Used by the some of the legal statements."
+msgstr ""
+"Tax Identification Number. Check the box if this contact is subjected to "
+"taxes. Used by the some of the legal statements."
+
+#. module: sale_hcm
+#: field:sale.order,so_note:0
+msgid "Sale Order Note"
+msgstr "Ghi chú"
+
+#. module: sale_hcm
+#: field:product.product,product_pack_cont_id:0
+msgid "Number Pack In Container"
+msgstr "Số lượng/cont"
+
+#. module: sale_hcm
+#: selection:product.supplier,type:0
+msgid "Default"
+msgstr "Mặc định"
+
+#. module: sale_hcm
+#: field:product.supplier,user_ids:0
+msgid "Users"
+msgstr "Người dùng"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_res_company
+msgid "Companies"
+msgstr "Các công ty"
+
+#. module: sale_hcm
+#: field:product.supplier,birthdate:0
+msgid "Birthdate"
+msgstr "Ngày sinh"
+
+#. module: sale_hcm
+#: field:product.supplier,date:0
+msgid "Date"
+msgstr "Date"
+
+#. module: sale_hcm
+#: view:res.partner:0
+msgid "Note for special date..."
+msgstr "Ghi chú cho ngày đặc biệt..."
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_product_supplier_category
+msgid "Partner Categories"
+msgstr "Partner Categories"
+
+#. module: sale_hcm
+#: help:product.supplier,customer:0
+msgid "Check this box if this contact is a customer."
+msgstr "Tích vào nếu liên lạc là khách hàng"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "History"
+msgstr "Lịch sử"
+
+#. module: sale_hcm
+#: field:res.partner,special_date_note:0
+msgid "Note Special Date"
+msgstr "Thêm ghi chú cho ngày đặc biệt"
+
+#. module: sale_hcm
+#: field:product.pack.cont,cont_type:0
+msgid "Container Type "
+msgstr "Kiểu container"
+
+#. module: sale_hcm
+#: selection:res.partner,partner_unit:0
+#: selection:sale.order,so_customer_unit:0
+msgid "Cm"
+msgstr "Cm"
+
+#. module: sale_hcm
+#: model:ir.ui.menu,name:sale_hcm.menu_customer_invoices_hcm
+msgid "Customer Invoices"
+msgstr "Các hóa đơn cho khách hàng"
+
+#. module: sale_hcm
+#: field:product.product,product_packaging:0
+msgid "Product Packaging"
+msgstr "Đóng gói sản phẩm"
+
+#. module: sale_hcm
+#: field:product.packaging,height_inch:0
+msgid "Height"
+msgstr "Chiều cao"
+
+#. module: sale_hcm
+#: view:sale.order:0
+msgid "Shipment..."
+msgstr "Vận chuyển..."
+
+#. module: sale_hcm
+#: field:res.partner,partner_unit:0
+msgid "Partner Unit "
+msgstr "Đơn vị đo"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_account_invoice
+#: selection:product.supplier,type:0
+msgid "Invoice"
+msgstr "Hóa đơn"
+
+#. module: sale_hcm
+#: field:product.product,product_ids:0
+msgid "Product Element"
+msgstr "Thành phần"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_product_product_material
+msgid "product.product.material"
+msgstr "product.product.material"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "e.g. Sales Director"
+msgstr "e.g. Sales Director"
+
+#. module: sale_hcm
+#: view:product.supplier:0 field:product.supplier,city:0
+msgid "City"
+msgstr "Thành phố"
+
+#. module: sale_hcm
+#: field:product.packaging,qty_inner_carton:0
+msgid "Qty/Inner Carton"
+msgstr "Qty/Inner Carton"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "Sales & Purchases"
+msgstr "Mua&Bán"
+
+#. module: sale_hcm
+#: view:product.packaging:0
+msgid "Other Info"
+msgstr "Thông tin khác"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "Put an internal note..."
+msgstr "Put an internal note..."
+
+#. module: sale_hcm
+#: field:res.partner,special_day:0
+msgid "Special Day"
+msgstr "Special Day"
+
+#. module: sale_hcm
+#: selection:product.supplier,type:0
+msgid "Other"
+msgstr "Khác"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "at"
+msgstr "at"
+
+#. module: sale_hcm
+#: field:product.product,prod_moq:0
+msgid "Product MOQ"
+msgstr "MOQ"
+
+#. module: sale_hcm
+#: field:product.product,product_size_inch:0
+msgid "Product Size(inch)"
+msgstr "Kích thước sản phẩm(inch)"
+
+#. module: sale_hcm
+#: constraint:product.supplier:0
+msgid "You cannot create recursive Partner hierarchies."
+msgstr "You cannot create recursive Partner hierarchies."
+
+#. module: sale_hcm
+#: view:product.product:0
+msgid "Internal Description "
+msgstr "Ghi chú nội bộ"
+
+#. module: sale_hcm
+#: selection:product.pack.cont,cont_type:0
+msgid "40HC"
+msgstr "40HC"
+
+#. module: sale_hcm
+#: model:ir.ui.menu,name:sale_hcm.top_menu_invoicing_manager_hcm
+msgid "Invoicing"
+msgstr "Hóa đơn"
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_product_supplier_title
+msgid "product.supplier.title"
+msgstr "product.supplier.title"
+
+#. module: sale_hcm
+#: field:product.list.price.his,list_price:0
+msgid "Price"
+msgstr "Giá bán"
+
+#. module: sale_hcm
+#: field:product.supplier,credit_limit:0
+msgid "Credit Limit"
+msgstr "Credit Limit"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "Internal Notes"
+msgstr "Ghi chú"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "Fax:"
+msgstr "Fax:"
+
+#. module: sale_hcm
+#: field:product.product,product_size:0
+msgid "Product Size(cm)"
+msgstr "Kích thước sản phẩm(cm)"
+
+#. module: sale_hcm
+#: field:product.supplier,street:0
+msgid "Street"
+msgstr "Đường"
+
+#. module: sale_hcm
+#: help:product.supplier,lang:0
+msgid ""
+"If the selected language is loaded in the system, all documents related to "
+"this contact will be printed in this language. If not, it will be English."
+msgstr ""
+"If the selected language is loaded in the system, all documents related to "
+"this contact will be printed in this language. If not, it will be English."
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "Address"
+msgstr "Địa chỉ"
+
+#. module: sale_hcm
+#: view:product.product:0
+msgid "Product Packing"
+msgstr "Đóng gói trong thùng"
+
+#. module: sale_hcm
+#: model:ir.actions.act_window,name:sale_hcm.act_open_supplier_form_view_hcm
+#: model:ir.ui.menu,name:sale_hcm.menu_product_suppliers_hcm
+#: model:ir.ui.menu,name:sale_hcm.menu_sale_product_suppliers_hcm
+msgid "Suppliers"
+msgstr "Nhà cung cấp"
+
+#. module: sale_hcm
+#: field:product.supplier,customer:0
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: sale_hcm
+#: view:product.product.colour:0
+msgid "Product Colour Tree"
+msgstr "Product Colour Tree"
+
+#. module: sale_hcm
+#: view:product.supplier:0 field:product.supplier,name:0
+msgid "Name"
+msgstr "Tên"
+
+#. module: sale_hcm
+#: help:product.supplier,website:0
+msgid "Website of Partner or Company"
+msgstr "Website of Partner or Company"
+
+#. module: sale_hcm
+#: view:product.supplier:0 field:product.supplier,country:0
+#: field:product.supplier,country_id:0
+msgid "Country"
+msgstr "Nước"
+
+#. module: sale_hcm
+#: view:product.supplier:0
+msgid "Is a Company?"
+msgstr "Có phải là công ty?"
+
+#. module: sale_hcm
+#: help:product.supplier.category,active:0
+msgid "The active field allows you to hide the category without removing it."
+msgstr "The active field allows you to hide the category without removing it."
+
+#. module: sale_hcm
+#: model:ir.model,name:sale_hcm.model_product_product
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: sale_hcm
+#: help:product.supplier,image_small:0
+msgid ""
+"Small-sized image of this contact. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image is "
+"required."
+msgstr ""
+"Small-sized image of this contact. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image is "
+"required."
+
+#. module: sale_hcm
+#: field:product.product,unit_product_nw:0
+msgid "Unit Product Net Weight"
+msgstr "Trọng lượng tịnh đơn vị sản phẩm"
+
+#. module: sale_hcm
+#: field:product.supplier,tz:0
+msgid "Timezone"
+msgstr "Timezone"
+
+#. module: sale_hcm
+#: field:product.supplier,bank_ids:0
+msgid "Banks"
+msgstr "Các ngân hàng"
+
+#. module: sale_hcm
+#: field:product.supplier,type:0
+msgid "Address Type"
+msgstr "Loại địa chỉ"
+
+#. module: sale_hcm
+#: view:sale.order:0
+msgid "Export Excel"
+msgstr "Xuất ra Excel"
+
+#. module: sale_hcm
+#: view:product.packaging:0
+msgid "Pallet Dimension(cm)"
+msgstr "Kích Thước Thùng(cm)"
+
+#. module: sale_hcm
+#: view:sale.order:0
+msgid "Note..."
+msgstr "Ghi chú..."
+
+#. module: sale_hcm
+#: field:product.cost.his,user_id:0 field:product.list.price.his,user_id:0
+msgid "Person"
+msgstr "Người cập nhật"
+
+#. module: sale_hcm
+#: help:product.supplier,type:0
+msgid ""
+"Used to select automatically the right address according to the context in "
+"sales and purchases documents."
+msgstr ""
+"Used to select automatically the right address according to the context in "
+"sales and purchases documents."
+
+#. module: sale_hcm
+#: help:product.supplier,is_company:0
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr "Tích vào nếu liên hệ là công ty, nếu không là người"
+
+#. module: sale_hcm
+#: field:product.cost.his,cost:0
+msgid "Cost"
+msgstr "Giá nội"
+
+#. module: sale_hcm
+#: help:product.supplier,image:0
+msgid ""
+"This field holds the image used as avatar for this contact, limited to "
+"1024x1024px"
+msgstr ""
+"This field holds the image used as avatar for this contact, limited to "
+"1024x1024px"
+
+#. module: sale_hcm
+#: view:product.cost.his:0 field:product.product,product_cost_his:0
+msgid "Cost History"
+msgstr "Lịch sử thay đổi giá nội"
+
+#. module: sale_hcm
+#: view:product.product:0 view:res.partner:0
+msgid "Accounting"
+msgstr "Kế toán"
+
+#. module: sale_hcm
+#: field:product.supplier.category,parent_right:0
+msgid "Right parent"
+msgstr "Right parent"

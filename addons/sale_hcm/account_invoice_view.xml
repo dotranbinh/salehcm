@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	
+	<menuitem id="top_menu_invoicing_manager_hcm" name="Invoicing" groups="group_invoice_manager" sequence="20" />
+    <menuitem parent="top_menu_invoicing_manager_hcm" id="menu_customers_hcm"
+        name="Customers"   sequence="1"
+       />
+	
+	<menuitem parent="menu_customers_hcm" id="menu_customer_invoices_hcm"
+        name="Customer Invoices"   sequence="1"  action="account.action_invoice_tree1" />
+	
+		<!-- sale order  Form View Inherit -->
+		<!-- <record id="invoice_customer_form_hcm_inherit" model="ir.ui.view">
+            <field name="name">invoice.customer.form.hcm.inherit</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account_voucher.view_invoice_customer"/>
+            <field name="arch" type="xml">
+                
+				
+				<button name="invoice_pay_customer"  attrs="{'invisible': ['|', ('state','!=','open'), ('sent','=',True)]}"
+				position = "attributes" > 
+					<attribute name = "invisible">1</attribute>
+				</button>
+				<button name="invoice_pay_customer"  attrs="{'invisible': ['|', ('state','!=','open'), ('sent','=',False)]}"
+				position = "attributes" > 
+					<attribute name = "invisible">1</attribute>
+				</button>
+				<xpath expr="//button[@name='invoice_print']" position="after">
+						
+					<button name="invoice_done" string="Paid" attrs="{'invisible': ['|', ('state','!=','open'), ('sent','=',False)]}"
+					type="object"  class="oe_highlight"  groups="base.group_user"/>
+                        
+					<button name="invoice_done" string="Paid" attrs="{'invisible': ['|', ('state','!=','open'), ('sent','=',True)]}"
+					type="object"  groups="base.group_user"/>
+					
+                </xpath>
+				<page string="Other Info"  
+				position = "attributes" > 
+					<attribute name = "invisible">1</attribute>
+				</page>
+				<page string="Payments"  
+				position = "attributes" > 
+					<attribute name = "invisible">1</attribute>
+				</page>
+            </field>
+        </record> -->
+		
+		<record id="invoice_customer_tree_hcm_inherit" model="ir.ui.view">
+            <field name="name">invoice.customer.tree.hcm.inherit</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_tree"/>
+            <field name="arch" type="xml">
+                
+				<field name="residual"  
+				position = "attributes" > 
+					<attribute name = "invisible">1</attribute>
+				</field>
+				<field name="amount_untaxed"  
+				position = "attributes" > 
+					<attribute name = "invisible">1</attribute>
+				</field>
+				
+            </field>
+        </record>
+		
+		
+	</data>
+</openerp>

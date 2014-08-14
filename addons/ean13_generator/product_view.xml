@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- Sequences for web sale.order -->
+        <record id="seq_type_ean13code" model="ir.sequence.type">
+            <field name="name">EAN13 Code</field>
+            <field name="code">product.ean13</field>
+        </record>
+
+        <record id="seq_ean13code" model="ir.sequence">
+            <field name="name">EAN13 Code</field>
+            <field name="code">product.ean13</field>
+            <field name="prefix">29</field>
+            <field name="padding">10</field>
+        </record>
+
+<!--  BUTTON FOR TESTING METHOD -->
+
+        <record id="button_for_testing_EAN13_generator" model="ir.ui.view">
+            <field name="name">ean13_generator.product.standard.price.form.inherit</field>
+            <field name="model">product.product</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <field name="name" position="before">
+                    <button name="gen_ean13_code" string="Gen EAN13 Code" icon="gtk-execute" type="object"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>
+

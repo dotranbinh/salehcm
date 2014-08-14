@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+       
+
+        <record id="res_partner_hcm_inherit" model="ir.ui.view">
+            <field name="name">res.partner.hcm.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+                
+                <xpath expr="//field[@name='website']" position="after">
+                    <field name="special_date"  on_change="onchange_special_date(special_date)"/>
+					<field name="special_day" invisible="1"/>
+					<field name="special_date_note"  placeholder="Note for special date..." widget="url"/>
+					<field name="partner_unit"/>
+					
+					
+                </xpath>
+                <page string="Accounting" position="attributes">
+					<attribute name='invisible'>1</attribute> 
+				</page>
+				<xpath expr="//field[@name='user_id']" position="replace">
+                    <field name="user_id"  on_change="onchange_user_id(user_id)"/>
+					
+					
+					
+                </xpath>
+            </field>
+        </record>
+
+
+    </data>
+</openerp>
+

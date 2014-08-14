@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	
+	<menuitem id="top_menu_product_manager_hcm" name="Products"  groups="group_product_manager" />
+    <menuitem parent="top_menu_product_manager_hcm" id="menu_product_hcm"
+        name="Products"   sequence="1"
+       />
+	<menuitem parent="top_menu_product_manager_hcm" id="menu_configuration_hcm"
+        name="Configuration"   sequence="1"
+       />
+	<menuitem parent="menu_product_hcm" id="menu_product_by_category_hcm"
+        name="Product by Category"   sequence="1"  action="product.product_category_action" />
+	<menuitem parent="menu_product_hcm" id="menu_products_hcm"
+        name="Products"  action="product.product_normal_action_sell"   sequence="2"
+       />
+	<menuitem parent="menu_configuration_hcm" id="menu_configuration_products_hcm"
+        name="Products"    sequence="1"
+       />
+	
+	<menuitem parent="menu_configuration_products_hcm" id="menu_configuration_products_category_hcm"
+        name="Product Categories"    action="product.product_category_action_form"  sequence="1"
+       />
+	   
+	
+	   
+	   
+	   <!-- Product Colour Form View -->
+	   <record id="product_product_colour_form_view" model="ir.ui.view">
+            <field name="name">product.product.colour.form</field>
+            <field name="model">product.product.colour</field>
+            <field name="arch" type="xml">
+                <form string="Product Colour Form" >
+                   
+                    <field name="name"/>
+					 
+                </form>
+            </field>
+        </record>
+	   
+	   <record id="product_product_colour_form_tree" model="ir.ui.view">
+            <field name="name">product.product.colour.tree</field>
+            <field name="model">product.product.colour</field>
+            <field name="arch" type="xml">
+                <tree string="Product Colour Tree" >
+                   
+                    <field name="name"/>
+					 
+                </tree>
+            </field>
+        </record>
+		<record id="action_product_product_colour" model="ir.actions.act_window">
+			<field name="name">Proudct Colour</field>
+			<field name="res_model">product.product.colour</field>
+			<field name="view_type">form</field>
+			<field name="view_id" ref="product_product_colour_form_tree"/>
+            
+        </record>
+		 <menuitem parent="menu_configuration_products_hcm" id="menu_configuration_products_product_colour_hcm"
+        name="Product Colour"    action="action_product_product_colour"  sequence="5"
+       />
+	   <!-- End  -->
+	   
+	    <!-- Product Material Form View -->
+	   <record id="product_product_material_form_view" model="ir.ui.view">
+            <field name="name">product.product.material.form</field>
+            <field name="model">product.product.material</field>
+            <field name="arch" type="xml">
+                <form string="Product Material Form" >
+                   
+                    <field name="name"/>
+					 
+                </form>
+            </field>
+        </record>
+	   
+	   <record id="product_product_material_form_tree" model="ir.ui.view">
+            <field name="name">product.product.material.tree</field>
+            <field name="model">product.product.material</field>
+            <field name="arch" type="xml">
+                <tree string="Product Material Tree" >
+                   
+                    <field name="name"/>
+					 
+                </tree>
+            </field>
+        </record>
+		<record id="action_product_product_material" model="ir.actions.act_window">
+			<field name="name">Product Material</field>
+			<field name="res_model">product.product.material</field>
+			<field name="view_type">form</field>
+			<field name="view_id" ref="product_product_material_form_tree"/>
+            
+        </record>
+		 <menuitem parent="menu_configuration_products_hcm" id="menu_configuration_products_product_material_hcm"
+        name="Product Material"    action="action_product_product_material"  sequence="10"
+       />
+	   <!-- End  -->
+		<!-- Product Form View Inherit -->
+		<record id="product_normal_form_view_hcm_inherit" model="ir.ui.view">
+            <field name="name">product.normal.form.view.hcm.inherit</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@string='Sales']" position="after">
+                   <page string="Product Childs" invisible="1">
+						<field name="product_ids" >
+                          
+						</field>
+					</page>
+                </xpath>
+				 <xpath expr="//field[@name='packaging']" position="replace"> 
+				</xpath>
+				 <xpath expr="//page[@string='Information']" position="after">
+                   <page string="Packing">
+				   <group>
+				   
+					<group string="Weight">
+						<field name="unit_product_nw" />
+						<field name="product_nw" />
+						<field name="product_gw" />
+					</group>
+					<group string="Product Size">
+						<field name="product_size" on_change="onchange_product_size(product_size)"/>  
+						<field name="product_size_inch"/>  
+					</group>
+					
+					
+						</group>
+						<group string="Product Packing">
+						  
+							<field name="packaging"/>  
+						</group>
+						<group>
+						<field name="product_pack_cont_id" />  
+						</group>
+					</page>
+                </xpath>
+				<!-- <xpath expr="//field[@name='warranty']" position="inside">
+                  
+						<field name="prod_moq" />
+                        
+						
+					
+                </xpath> -->
+				<xpath expr="//field[@name='list_price']" position="after">
+                  
+						<field name="product_list_price_his" groups="product.group_sale_pricelist"/>
+                        
+						
+					
+                </xpath>
+				<xpath expr="//field[@name='list_price']" position="before">
+                  
+						 <field name="product_colour" widget="selection" on_change="onchange_product_colour(product_colour,product_material,name)"/>
+						<field name="product_material"  widget="selection"  on_change="onchange_product_colour(product_colour,product_material,name)"/>
+                        
+						
+					
+                </xpath>
+				<xpath expr="//field[@name='standard_price']" position="after">
+                  
+						<field name="product_cost_his" />
+                        
+						
+					
+                </xpath>
+				<xpath expr="//field[@name='default_code']" position="before">
+                  
+						<field name="prod_incr" invisible="1"/>  
+                       
+						<field name="prod_moq" />
+						
+						
+					
+                </xpath>
+				<xpath expr="//field[@name='cost_method']" position="before">
+                  
+						
+                        
+						<field name="product_supplier_id" />
+						<field name="product_code_supplier" />						
+						
+					
+                </xpath>
+				<field name="description" position = "attributes" > 
+						<attribute name = "invisible">1</attribute>
+				</field>
+				<!-- <xpath expr="//field[@name='categ_id']" position="replace">
+                  
+						
+                        
+						<field name="categ_id" on_change="onchange_categ_id(categ_id)" />  
+						<field name="categ_id"  />  
+						
+					
+                </xpath> -->
+				<xpath expr="//field[@name='description_sale']" position="after">
+                  
+						
+                                <separator string="Internal Description "/>
+                         <field name="description" placeholder="Internal Description..."/>
+                      
+						  
+						
+					
+                </xpath>
+				<xpath expr="//field[@name='list_price']" position="replace">
+                  
+						
+                        
+						<field name="list_price" on_change="onchange_sale_price(list_price)"  groups="product.group_sale_pricelist" />  
+						
+					
+                </xpath>
+				<xpath expr="//field[@name='standard_price']" position="replace">
+                  
+						
+                        
+						<field name="standard_price" on_change="onchange_cost(standard_price)" />  
+						
+					
+                </xpath>
+				 <page string="Accounting" position="attributes">
+					<attribute name='invisible'>1</attribute> 
+				</page>
+				<page string="Inventory" position="attributes">
+					<attribute name='invisible'>1</attribute> 
+				</page>
+				
+			</field>
+        </record>
+		<!-- End -->
+	<!-- Product Packing Container -->
+		 <record id="product_packing_container_tree" model="ir.ui.view">
+            <field name="name">product.pack.cont.tree</field>
+            <field name="model">product.pack.cont</field>
+            <field name="arch" type="xml">
+                <tree string="Packaging" editable="bottom">
+                   
+                    <field name="cont_type"/>
+					 <field name="number_pack"/>
+                </tree>
+            </field>
+        </record>
+	<!-- End -->
+		<!-- Product Price History -->
+		 <record id="product_price_history_tree" model="ir.ui.view">
+            <field name="name">product.list.price.his.tree</field>
+            <field name="model">product.list.price.his</field>
+            <field name="arch" type="xml">
+                <tree string="Price History" editable="bottom">
+                   
+                    <field name="list_price"/>
+					 <field name="date_modified"/>
+					 <field name="user_id"/>
+					 <field name="note"/>
+                </tree>
+            </field>
+        </record>
+	<!-- End -->
+		<!-- Product Cost History -->
+		 <record id="product_cost_history_tree" model="ir.ui.view">
+            <field name="name">product.cost.his.tree</field>
+            <field name="model">product.cost.his</field>
+            <field name="arch" type="xml">
+                <tree string="Cost History" editable="bottom">
+                   
+                    <field name="cost"/>
+					 <field name="date_modified"/>
+					 <field name="user_id"/>
+					 <field name="note"/>
+                </tree>
+            </field>
+        </record>
+	<!-- End -->
+	<!-- Product Category Form View Inherit -->
+	<record id="product_category_form_view_hcm_inherit" model="ir.ui.view">
+            <field name="name">product.category.form.view.hcm.inherit</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                
+				<xpath expr="//field[@name='parent_id']" position="after">
+                  
+						<field name="code" />
+                        
+						
+					
+                </xpath>
+				
+            </field>
+        </record>
+	<!-- End -->
+	
+	<!-- Product Product Tree View Inherit -->
+		<record id="product_product_tree_view_hcm_inherit" model="ir.ui.view">
+            <field name="name">product.product.tree.view.hcm.inherit</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field name="arch" type="xml">
+                 <field name="qty_available" position="attributes">
+					<attribute name='invisible'>1</attribute> 
+				</field>
+				  <field name="virtual_available" position="attributes">
+					<attribute name='invisible'>1</attribute> 
+				</field>
+			
+			</field>
+        </record>
+	<!-- End -->
+	<!-- Product Category Form View Inherit -->
+	<record id="view_category_property_form_hcm_inherit" model="ir.ui.view">
+            <field name="name">view.category.property.form.hcm.inherit</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="account.view_category_property_form"/>
+            <field name="arch" type="xml">
+
+				 <field name="type" position="attributes">
+					<attribute name='invisible'>1</attribute> 
+				</field>
+				<group name="account_property" position="attributes">
+					<attribute name='invisible'>1</attribute> 
+				</group>
+			</field>
+        </record>
+	<!-- End -->
+	
+
+	<!-- Product Packaging Form View Inherit -->
+	<record id="product_packaging_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.packaging.form.view.inherit</field>
+            <field name="model">product.packaging</field>
+			<field name="inherit_id" ref="product.product_packaging_form_view"/>
+            <field name="arch" type="xml">
+				<group  position="replace">
+                <!-- <form string="Packaging" version="7.0"> -->
+                    <group col="4">
+                       
+                        <separator colspan="4" string="Pallet Dimension(cm)"/>
+                        <field name="height" on_change="onchange_pallet_height(height)"/>
+                        <field name="width" on_change="onchange_pallet_width(width)"/>
+                        <field name="length" on_change="onchange_pallet_length(length)"/>
+						<field name="ul"/> 
+                        
+                    </group>
+					<group col="4">
+                       
+                        <separator colspan="4" string="Pallet Dimension(inch)"/>
+                        <field name="height_inch"/>
+                        <field name="width_inch"/>
+                        <field name="length_inch"/>
+						 
+                       
+                    </group>
+					<group col="4">
+                       
+                        <separator colspan="4" string="Packing"/>
+						<field name="qty_export_carton"/>
+                        <field name="qty_inner_carton"/>
+                       
+						
+                         <separator colspan="4" string="Other Info"/>
+                        <field colspan="4" name="name"/>
+						<field name="sequence"/>
+                    </group>
+                </group>
+            </field>
+    </record>
+	<!--  -->
+	
+	<!-- Product Packaging Tree View Inherit -->
+	<record id="product_packaging_tree_view_inherit" model="ir.ui.view">
+            <field name="name">product.packaging.tree.view.inherit</field>
+            <field name="model">product.packaging</field>
+			<field name="inherit_id" ref="product.product_packaging_tree_view"/>
+            <field name="arch" type="xml">
+                
+                    
+                   <xpath expr="//field[@name='ean']" position="replace">
+                  
+						
+                        
+						<field name="qty_export_carton" />  
+						
+					
+                </xpath>
+				 <xpath expr="//field[@name='qty']" position="replace">
+                  
+						
+                        
+						<field name="qty" invisible="1" />  
+						
+					
+                </xpath>
+                  <xpath expr="//field[@name='ul']" position="replace">
+                  
+						
+                        
+						<field name="ul" invisible="1" />  
+						
+					
+                </xpath>
+               
+            </field>
+        </record>
+	<!--  -->
+	</data>
+</openerp>

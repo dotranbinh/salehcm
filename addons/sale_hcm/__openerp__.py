@@ -28,7 +28,7 @@
     'description': """
 Manage sales quotations and orders for HCM Branch
 ==================================
-
+Change something
 This application allows you to manage your sales goals in an effective and efficient manner by keeping track of all sales orders and history.
 
 It handles the full sales workflow:
